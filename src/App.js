@@ -1,20 +1,17 @@
+import "./styles.css";
 import React, { useState, useEffect, useRef } from "react";
-import "./style.css";
 
 export default function App() {
   const [textlines, settextlines] = useState([]);
   const [inputValue, setInputValue] = useState("");
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef(null);
 
   const loop = () => {
     setTimeout(() => {
-      const inputElement = document.getElementById("msg") as HTMLInputElement;
-      if (inputElement) {
-        let textpush = inputElement.value;
-        const newline = textpush.trim();
-        settextlines([...textlines, newline]);
-        setInputValue("");
-      }
+      let textpush = document.getElementById("msg").value;
+      const newline = textpush.trim();
+      settextlines([...textlines, newline]);
+      setInputValue("");
     }, 450);
   };
 
@@ -26,7 +23,7 @@ export default function App() {
     }, 450);
   };
 
-  const enter = (event: React.KeyboardEvent<HTMLInputElement>) => {
+  const enter = (event) => {
     if (event.key === "Enter") {
       loop();
     }
@@ -52,7 +49,7 @@ export default function App() {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyPress={enter}
-        />
+        ></input>
       </div>
       <button className="send" id="send" onClick={loop}>
         Send
