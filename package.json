@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "bootstrap": "^5.3.1",
     "git": "^0.1.5",
     "loader-utils": "3.2.1",
     "node": "^20.5.0",

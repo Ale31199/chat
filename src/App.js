@@ -37,7 +37,7 @@ export default function App() {
   }, [textlines]);
 
   return (
-    <div className="App">
+    <div className="App" data-bs-theme="dark">
       <h1>Chat Test Alpha</h1>
       <h2>Developing something interesting!</h2>
       <div className="chatbox">

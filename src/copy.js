@@ -23,7 +23,7 @@ export default function App() {
     }, 450);
   };
 
-  const enter = (event: React.KeyboardEvent<HTMLInputElement>) => {
+  const enter = (event) => {
     if (event.key === "Enter") {
       loop();
     }
