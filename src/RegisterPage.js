@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import firebase from "./firebase";
+import "./registerStyle.css"
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +14,7 @@ const Register = () => {
       .then((userCredential) => {
         // L'utente è stato registrato con successo
         const user = userCredential.user;
-        console.log("Utente registrato:", user);
+        document.getElementById('registrato').innerHTML = ("Utente registrato:", user);
       })
       .catch((error) => {
         setError(error.message);
@@ -22,22 +23,23 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h2>Registrati</h2>
-      <input
+    <div className="form">
+      <h2>Register</h2>
+      <input className="email"
         type="email"
-        placeholder="Indirizzo email"
+        placeholder="Email Address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+      <input className="pass"
         type="password"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleRegister}>Registrati</button>
+      <button className="reg" onClick={handleRegister}>Register</button>
       {error && <p>{error}</p>}
+      <p id="registrato"></p>
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import "./styles.css";
 import React, { useState, useEffect, useRef } from "react";
 import axios from 'axios';
-import { registerVersion } from "firebase/app";
+//import { registerVersion } from "firebase/app";
 import './registerStyle.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -19,12 +20,11 @@ axios.get(url)
 
 
 
-
 export default function App() {
   const [textlines, settextlines] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const scrollRef = useRef(null);
-  const [register, setRegister] = useState(false)
+
 
 
   const loop = () => {
@@ -57,18 +57,6 @@ export default function App() {
   }
 
 
-  const Registration = () => {
-    if (register) {
-      setRegister(false)
-    } else {
-      setRegister(true)
-    }
-  }
-
-
-
-
-
   useEffect(() => {
     const scroll = scrollRef.current;
     if (scroll) {
@@ -81,8 +69,8 @@ export default function App() {
 
 
       <div className="header">
-        <div className="registerBox" onClick={Registration}>
-          <a className="text" href="register">Register / Login </a>
+        <div className="registerBox">
+          <a className="text" href="/register">Register / Login </a>
         </div>
 
         <h1>Chat Test Alpha</h1>
