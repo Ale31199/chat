@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-
-
-
-
-
 <body>
 
-
   <?php
-
-
-
-
+/*
   
   $name = 'Alessio';
   $surname= 'Santillo';
@@ -21,8 +11,14 @@
   echo "<p> My Name is $name $surname !</p>";
 
 
+objcet semplice:
+const oggetto{
+  nome: 'Alessio,
+  cognome: 'Santillo;
+}
 
-/*
+*/
+
 //definizione della classe
   class Persona {
     public $name;
@@ -41,7 +37,6 @@
     }
   }
 
-
   //creazione di un oggetto instanziando la classe
   
   $persona1 = new Persona("Alessio", "Topo gigio"); 
@@ -51,7 +46,7 @@ echo $persona1->name;  //output:Alessio
 echo $persona1->surname;  //output:Topo gigio
 
 //chiamata al metodo dell'oggetto
-echo $persona1->saluta();*/
+echo $persona1->saluta();
 
 
     ?>

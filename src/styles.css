@@ -88,6 +88,7 @@ body {
   left: 300px;
   padding: 15px;
   top: 542px;
+  transition: 1s;
 }
 
 @media(max-width:747px) {
@@ -183,6 +184,7 @@ body {
   justify-content: center;
   position: relative;
   top: -136px;
+  transition: 1s;
 }
 
 @media(max-width:747px) {
@@ -193,4 +195,27 @@ body {
 
 .delete:hover {
   background-color: rgb(92, 24, 19);
+}
+
+
+.registerBox {
+  position: relative;
+  top: 80px;
+  left: 400px;
+  border-radius: 10px;
+  background-color: rgb(40, 101, 101);
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+.registerBox:hover {
+  background-color: rgb(0, 170, 255);
+}
+
+.text {
+  text-decoration: none;
+  color: white;
 }

@@ -1,6 +1,10 @@
 import "./styles.css";
 import React, { useState, useEffect, useRef } from "react";
 import axios from 'axios';
+import { registerVersion } from "firebase/app";
+import './registerStyle.css';
+
+
 
 const url = 'http://localhost:3000/src/file.php';
 
@@ -20,6 +24,7 @@ export default function App() {
   const [textlines, settextlines] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const scrollRef = useRef(null);
+  const [register, setRegister] = useState(false)
 
 
   const loop = () => {
@@ -52,6 +57,16 @@ export default function App() {
   }
 
 
+  const Registration = () => {
+    if (register) {
+      setRegister(false)
+    } else {
+      setRegister(true)
+    }
+  }
+
+
+
 
 
   useEffect(() => {
@@ -63,8 +78,16 @@ export default function App() {
 
   return (
     <div className="App" data-bs-theme="dark">
-      <h1>Chat Test Alpha</h1>
-      <h2>Developing something interesting!</h2>
+
+
+      <div className="header">
+        <div className="registerBox" onClick={Registration}>
+          <a className="text" href="register">Register / Login </a>
+        </div>
+
+        <h1>Chat Test Alpha</h1>
+        <h2>Developing something interesting!</h2>
+      </div>
       <div className="chatbox">
         <p className="limit" id="limit">{limitLetters}0</p>
         <p className="limite" id="limit">/1500</p>
