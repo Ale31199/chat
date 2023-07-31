@@ -14,12 +14,12 @@
 
 
 
-  /*
+  
   $name = 'Alessio';
   $surname= 'Santillo';
 
   echo "<p> My Name is $name $surname !</p>";
-*/
+
 
 
 /*
