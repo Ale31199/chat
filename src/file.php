@@ -15,7 +15,11 @@ if ($_SERVER['REQUEST_METHOD']== 'POST'){
   $email = test_input($_POST['email']);
   $password = test_input($_POST['password']);
   $gender = test_input($_POST['gender']);
+
 };
+
+
+
 
 function test_input($data){
   $data = trim($data);
@@ -34,18 +38,22 @@ function test_input($data){
  Man: <input class="baro" type="radio" name="gender">
  Woman: <input class="baro" type="radio" name="gender">
  Other: <input class="baro" type="radio" name="gender">
- <button class="reg">Register</button>
+ <input value="Register" type="submit" name="submit" class="reg">
 </div>
 
-<?php
-echo 'Your Registration';
-echo $name;
-echo $email;
-echo $password;
-echo $gender;
 
-echo '**Do not share your personal info to nobody!**';
 
-?>
+  <div class="registration">Your Registration:</div>
+ 
+  <div id="data" class="registration1"><?php echo $name; ?></div>
+  <div id="data" class="registration1"><?php echo $email; ?></div>
+  <div id="data" class="registration1"><?php echo $password; ?></div>
+  <div id="data" class="registration1"><?php echo $gender; ?></div>
+
+  <div class="registration2">**Do not share your personal info with anybody!**</div>
+
+
+
+
   <body>
     <html>

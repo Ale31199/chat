@@ -45,3 +45,29 @@ body {
   background-color: rgba(0, 0, 0, 0.94);
   color: white;
 }
+
+.registration {
+  font-weight: bold;
+  position: absolute;
+  top: 420px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.registration1 {
+  color: white;
+  position: relative;
+  top: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration2 {
+  font-weight: bold;
+  position: absolute;
+  top: 550px;
+  display: flex;
+  flex-direction: column;
+}
