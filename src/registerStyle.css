@@ -18,6 +18,9 @@
   width: 300px;
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.141);
+  color: white;
+
 }
 
 .baro {
@@ -44,6 +47,7 @@
 body {
   background-color: rgba(0, 0, 0, 0.94);
   color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .registration {
@@ -57,7 +61,7 @@ body {
 
 
 .registration1 {
-  color: white;
+  color: rgba(0, 133, 200, 0.73);
   position: relative;
   top: 440px;
   display: flex;
@@ -70,4 +74,21 @@ body {
   top: 550px;
   display: flex;
   flex-direction: column;
+}
+
+.back {
+  cursor: pointer;
+  background-color: rgba(104, 154, 255, 0.408);
+  color: white;
+  transition: 1s;
+  display: block;
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  top: -32px;
+  left: 165px;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
