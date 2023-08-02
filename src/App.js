@@ -70,7 +70,8 @@ export default function App() {
 
       <div className="header">
         <div className="registerBox">
-          <a className="text" href="http://localhost:3000/src/file.php">Register / Login </a>
+          <a className="text" href="http://localhost:3000/src/signup.php">Sign Up</a>
+          <a className="texto" href="http://localhost:3000/src/login.php">Log In</a>
         </div>
 
         <h1>Chat Test Alpha</h1>

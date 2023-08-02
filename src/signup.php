@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Registration Page</title>
+    <title>Sign Up Page</title>
   <link rel="stylesheet" href="registerStyle.css">
   <script src="registerPage.js"></script>
   </head>
@@ -31,7 +31,7 @@ function test_input($data){
 ?>
 
 <div class="form">
-<h2>Register to Chat Online</h2>
+<h2>Sign Up to Chat Online</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>">
 <span class="error">*<?php echo $nameErr; ?></span>
  Name: <input  class="bart" type="text" name="name" placeholder="Name...">
@@ -58,7 +58,7 @@ function test_input($data){
   <div id="data" class="registration1"><?php echo $gender; ?></div>
   
 
-  <div class="registration2">**Do not share your personal info with anybody!**</div>
+  <div class="registration2">**Do not share your personal info!**</div>
 
 
 
