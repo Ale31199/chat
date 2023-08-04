@@ -12,7 +12,7 @@
   
 $name = $email = $password = $gender = '';
 $nameErr = $emailErr = $passwordErr = $genderErr = '';
-
+$id= '';
 
 if ($_SERVER['REQUEST_METHOD']== 'POST'){
   
@@ -43,17 +43,6 @@ if ($_SERVER['REQUEST_METHOD']== 'POST'){
 };
 
 
-
-function check($name, $email, $password){
-if($name === '' || $email === '' || $password === ''){
-echo '<script>alert("test")</script>';
-return false;
-} else {
-  return true;
-};
-};
-
-
 function test_input($data){
   $data = trim($data);
   $data = stripcslashes($data);
@@ -64,8 +53,20 @@ function test_input($data){
 
 <div class="form">
 <h2>Sign Up to Chat Online</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" onsubmit="return check()">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" onsubmit="return check($name, $email, $password, $id)">
 
+<?php
+function check($name, $email, $password){
+if($name === '' || $email === '' || $password === ''){
+echo '<script>alert("Invalid form: Fill all the camps with the data")</script>';
+return false;
+} else {
+  return true;
+};
+};
+
+
+?>
 
 <span class="error">*<?php echo $nameErr; ?></span>
  Name: <input  class="bart" type="text" name="name" placeholder="Name...">
