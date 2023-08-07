@@ -1,0 +1,158 @@
+.headermain {
+  border-width: 1px;
+  border-color: rgba(121, 121, 121, 0.372);
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 80px;
+  box-shadow: 0px 11px 1px -10px white;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  transition: 2s;
+}
+
+@media(max-width:800px) {
+  .headermain {
+    zoom: 0.8;
+  }
+}
+
+
+.right {
+  margin-right: 50px;
+}
+
+.titlemain {
+  width: auto;
+  font-family: 'Kanit', sans-serif;
+  background-color: rgb(0, 117, 80);
+  color: rgb(255, 255, 255);
+  padding-left: 7px;
+  padding-right: 7px;
+
+  position: relative;
+  /* Aggiunta: per posizionamento orizzontale */
+  left: 50%;
+  /* Aggiunta: sposta il titolo a metà del contenitore padre */
+  transform: translateX(-50%);
+}
+
+
+
+/*
+@media(max-width:800px) {
+  .titlemain {
+    left: 10%;
+    position: relative;
+    transform: none;
+  }
+}*/
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(1, 17, 17);
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width:1000px) {
+  body {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+
+
+.left {
+  width: auto;
+  height: 40px;
+  margin-right: 20px;
+  align-items: center;
+  margin-left: 50px;
+  height: auto;
+}
+
+
+.registermain {
+  position: relative;
+  right: -8px;
+  top: 10px;
+  width: auto;
+}
+
+.textmain {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(40, 101, 101);
+  transition: 1s;
+  padding: 5px;
+  box-shadow: 2px 0px 0px 0px;
+  margin-right: 30px;
+  border: none;
+}
+
+.textmain:hover,
+.textomain:hover {
+  background-color: rgb(0, 255, 170);
+  color: black;
+  font-weight: bolder;
+  box-shadow: 2px 0px 0px 0px black;
+
+}
+
+.textomain {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(40, 101, 101);
+  transition: 1s;
+  box-shadow: -2px 0px 1px 0px;
+  padding: 5px;
+
+}
+
+
+
+.input {
+  width: auto;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 0px 1px 1px white;
+  padding: 7px;
+  color: rgb(28, 182, 146);
+  outline: none;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+  zoom: 0.8;
+  position: relative;
+  top: 160px;
+  transition: 2s;
+}
+
+
+.gridx {
+  background-color: black;
+}
+
+@media(max-width:800px) {
+  .grid {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}

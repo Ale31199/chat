@@ -11,6 +11,8 @@
 body {
   background-color: rgba(0, 0, 0, 0.94);
   color: white;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
 .bar {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import firebase from "./firebase";
+
 import "./registerStyle.css"
 
 const Register = () => {
