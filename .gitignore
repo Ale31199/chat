@@ -1,2 +1,5 @@
 node_modules
 mongodb-1.16.1
+composer.phar
+phpinfo.php
+DATI.php
