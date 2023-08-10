@@ -40,6 +40,8 @@
   border: none;
   border-radius: 10px;
   padding: 9px;
+  position: relative;
+  top: 350px;
 }
 
 .reg:hover {
@@ -98,7 +100,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: 7px;
-  top: -32px;
+  top: 318px;
   left: 155px;
   position: relative;
   text-decoration: none;
